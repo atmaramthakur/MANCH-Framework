@@ -30,10 +30,10 @@ struct NetworkManager {
     let router = Router<ManchApi>()
     
     
-    init(reqId: String, orgKey: String, securityKey: String) {
+    init(reqId: String, authToken: String) {
         
         NetworkManager.requestId =  reqId
-        NetworkManager.authenticationToken = AuthTokenGenerator().generate(orgKey: orgKey, reqId: reqId , securityKey: securityKey)
+        NetworkManager.authenticationToken = authToken
     }
     
     

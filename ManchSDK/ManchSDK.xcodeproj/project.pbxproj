@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4005429A234F32110084D7A8 /* MyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054299234F32110084D7A8 /* MyFile.swift */; };
+		4005429D234F4D0A0084D7A8 /* ManchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4005429C234F4D0A0084D7A8 /* ManchStoryboard.storyboard */; };
+		4005429F234F4EF40084D7A8 /* ManchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4005429E234F4EF40084D7A8 /* ManchView.xib */; };
+		40054321235063CC0084D7A8 /* ManchConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054320235063CC0084D7A8 /* ManchConstants.swift */; };
 		4062D250234EF52C00E3A761 /* eSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D23D234EF52C00E3A761 /* eSign.swift */; };
 		4062D251234EF52C00E3A761 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D23E234EF52C00E3A761 /* Transaction.swift */; };
 		4062D252234EF52C00E3A761 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D241234EF52C00E3A761 /* ParameterEncoding.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40054299234F32110084D7A8 /* MyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFile.swift; sourceTree = "<group>"; };
+		4005429C234F4D0A0084D7A8 /* ManchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManchStoryboard.storyboard; sourceTree = "<group>"; };
+		4005429E234F4EF40084D7A8 /* ManchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManchView.xib; sourceTree = "<group>"; };
+		40054320235063CC0084D7A8 /* ManchConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManchConstants.swift; sourceTree = "<group>"; };
 		4062D23D234EF52C00E3A761 /* eSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eSign.swift; sourceTree = "<group>"; };
 		4062D23E234EF52C00E3A761 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		4062D241234EF52C00E3A761 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -163,12 +171,16 @@
 		40B13B54234ED7CB00730AD4 /* ManchSDK */ = {
 			isa = PBXGroup;
 			children = (
+				4005429C234F4D0A0084D7A8 /* ManchStoryboard.storyboard */,
 				4062D23C234EF52C00E3A761 /* Model */,
 				4062D23F234EF52C00E3A761 /* Networking */,
 				40B13B55234ED7CB00730AD4 /* ManchSDK.h */,
 				40B13B56234ED7CB00730AD4 /* Info.plist */,
 				40B13B75234ED96B00730AD4 /* ManchSDKManager.swift */,
 				4062D25E234EF56E00E3A761 /* ManchViewController.swift */,
+				40054299234F32110084D7A8 /* MyFile.swift */,
+				4005429E234F4EF40084D7A8 /* ManchView.xib */,
+				40054320235063CC0084D7A8 /* ManchConstants.swift */,
 			);
 			path = ManchSDK;
 			sourceTree = "<group>";
@@ -274,6 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4005429F234F4EF40084D7A8 /* ManchView.xib in Resources */,
+				4005429D234F4D0A0084D7A8 /* ManchStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4062D250234EF52C00E3A761 /* eSign.swift in Sources */,
+				4005429A234F32110084D7A8 /* MyFile.swift in Sources */,
 				40B13B76234ED96B00730AD4 /* ManchSDKManager.swift in Sources */,
 				4062D254234EF52C00E3A761 /* JSONParameterEncoder.swift in Sources */,
 				4062D259234EF52C00E3A761 /* HTTPMethod.swift in Sources */,
@@ -303,6 +318,7 @@
 				4062D251234EF52C00E3A761 /* Transaction.swift in Sources */,
 				4062D25F234EF56E00E3A761 /* ManchViewController.swift in Sources */,
 				4062D258234EF52C00E3A761 /* HTTPTask.swift in Sources */,
+				40054321235063CC0084D7A8 /* ManchConstants.swift in Sources */,
 				4062D256234EF52C00E3A761 /* ManchEndPoint.swift in Sources */,
 				4062D25C234EF52C00E3A761 /* AuthTokenGenerator.swift in Sources */,
 				4062D253234EF52C00E3A761 /* URLParameterEncoding.swift in Sources */,
