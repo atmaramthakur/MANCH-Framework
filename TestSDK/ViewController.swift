@@ -29,23 +29,47 @@ class ViewController: UIViewController {
         let timeInMiliSecDate = Date()
                let reqId =  "\(timeInMiliSecDate.timeIntervalSince1970 * 1000000 )"
         
-        let params = ["firstName" : fName,
-                      "lastName": lName,
-                      "templateKey": templateKey,
-                      "documentType": docType,
-                      "environment":environment,
-                      "requestId": reqId,
-//                      "authenticationToken": "",
-                      "acceptTransaction": "Y",
-                      "documentURL" : "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-                      "orgKey": orgKey,
-                      "securityKey": securityKey
-                      
-        ]
-        ManchSDKManager().createTransaction(param: params, viewController: self, completionHandler:{ (status, response) -> Void in
-            print("Status : \(status) and url =\(response)")
-            })
+        let authToken = AuthTokenGenerator().generate(orgKey: orgKey, reqId: reqId , securityKey: securityKey)
+        
+//        let params = ["firstName" : fName,
+//                      "lastName": lName,
+//                      "templateKey": templateKey,
+//                      "documentType": docType,
+//                      "environment":environment,
+//                      "requestId": reqId,
+//                      "authenticationToken": authToken,
+//                      "acceptTransaction": "Y",
+//                      "documentURL" : "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+//                      "orgKey": orgKey,
+//                      "securityKey": securityKey
+//
+//        ]
+        let sdkManager = ManchSDKManager()
+//        sdkManager.createTransaction(param: params, viewController: self, completionHandler:{ (status, resp) -> Void in
+        
+
+//            if status{
+//                print("DocUrl = \(resp)")
+        
+                let params = ["requestId": reqId,
+                              "documentURL" : "resp",
+                              "environment" :"DEV",
+                              "acceptTransaction" : "Y",
+                              "authenticationToken" : authToken
+                ]
+                sdkManager.eSignDocument(param: params, completion: {(status, response) in
+                    print("Status=\(status) and response = \(response)")
+                    
+//                    if status{
+//                        sdkManager.sendStatusRequest()
+//                    }
+                })
+//            }else{
+//                // error case
+//            }
+//            })
     }
+    
 
 
 }

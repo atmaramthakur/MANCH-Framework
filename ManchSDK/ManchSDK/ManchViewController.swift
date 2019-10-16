@@ -37,7 +37,22 @@ class  ManchViewController: UIViewController ,WKNavigationDelegate {
     }
    
     
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse,
+                 decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        
+        if let response = navigationResponse.response as? HTTPURLResponse {
+            print("response.statusCode :: \(response.statusCode)")
+            if response.statusCode != 200 {
+                deligate?.eventCompleted(mode: 1, data: "Failure from URL\(response.url) with response Code \(response.statusCode)")
+                dismiss(animated: true, completion: nil)
+            }
+        }
+        decisionHandler(.allow)
+    }
+    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
         if let host = navigationAction.request.url?.absoluteString {
             if host.starts(with:"https://dev.manchtech.com/nsdl-esp/authenticate/esignCancel"){
 //                dismiss(animated: true, completion: nil)
