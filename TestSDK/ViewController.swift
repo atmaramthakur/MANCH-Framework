@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import ManchSDK
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after  loading the view.
+        
+//        let manch = ManchSDKManager()
+        ManchSDKManager().printMe(str: "Hello")
     }
 
 

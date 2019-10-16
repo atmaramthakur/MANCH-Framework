@@ -14,6 +14,7 @@
 		40B13B25234ED6F900730AD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B13B23234ED6F900730AD4 /* LaunchScreen.storyboard */; };
 		40B13B30234ED6FA00730AD4 /* TestSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B13B2F234ED6FA00730AD4 /* TestSDKTests.swift */; };
 		40B13B3B234ED6FA00730AD4 /* TestSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B13B3A234ED6FA00730AD4 /* TestSDKUITests.swift */; };
+		40B13B78234EDA3E00730AD4 /* ManchSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B13B72234ED7CD00730AD4 /* ManchSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,27 @@
 			remoteGlobalIDString = 40B13B16234ED6F700730AD4;
 			remoteInfo = TestSDK;
 		};
+		40B13B71234ED7CD00730AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40B13B52234ED7CB00730AD4;
+			remoteInfo = ManchSDK;
+		};
+		40B13B73234ED7CD00730AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40B13B5B234ED7CB00730AD4;
+			remoteInfo = ManchSDKTests;
+		};
+		40B13B79234EDA8B00730AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40B13B51234ED7CB00730AD4;
+			remoteInfo = ManchSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +69,7 @@
 		40B13B36234ED6FA00730AD4 /* TestSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B13B3A234ED6FA00730AD4 /* TestSDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSDKUITests.swift; sourceTree = "<group>"; };
 		40B13B3C234ED6FA00730AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ManchSDK.xcodeproj; path = ManchSDK/ManchSDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B13B78234EDA3E00730AD4 /* ManchSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +101,12 @@
 		40B13B0E234ED6F700730AD4 = {
 			isa = PBXGroup;
 			children = (
+				40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */,
 				40B13B19234ED6F700730AD4 /* TestSDK */,
 				40B13B2E234ED6FA00730AD4 /* TestSDKTests */,
 				40B13B39234ED6FA00730AD4 /* TestSDKUITests */,
 				40B13B18234ED6F700730AD4 /* Products */,
+				40B13B77234EDA3E00730AD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +151,22 @@
 			path = TestSDKUITests;
 			sourceTree = "<group>";
 		};
+		40B13B6D234ED7CB00730AD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40B13B72234ED7CD00730AD4 /* ManchSDK.framework */,
+				40B13B74234ED7CD00730AD4 /* ManchSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40B13B77234EDA3E00730AD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				40B13B7A234EDA8B00730AD4 /* PBXTargetDependency */,
 			);
 			name = TestSDK;
 			productName = TestSDK;
@@ -215,6 +258,12 @@
 			mainGroup = 40B13B0E234ED6F700730AD4;
 			productRefGroup = 40B13B18234ED6F700730AD4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40B13B6D234ED7CB00730AD4 /* Products */;
+					ProjectRef = 40B13B6C234ED7CB00730AD4 /* ManchSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40B13B16234ED6F700730AD4 /* TestSDK */,
@@ -223,6 +272,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40B13B72234ED7CD00730AD4 /* ManchSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ManchSDK.framework;
+			remoteRef = 40B13B71234ED7CD00730AD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40B13B74234ED7CD00730AD4 /* ManchSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ManchSDKTests.xctest;
+			remoteRef = 40B13B73234ED7CD00730AD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40B13B15234ED6F700730AD4 /* Resources */ = {
@@ -289,6 +355,11 @@
 			isa = PBXTargetDependency;
 			target = 40B13B16234ED6F700730AD4 /* TestSDK */;
 			targetProxy = 40B13B37234ED6FA00730AD4 /* PBXContainerItemProxy */;
+		};
+		40B13B7A234EDA8B00730AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ManchSDK;
+			targetProxy = 40B13B79234EDA8B00730AD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

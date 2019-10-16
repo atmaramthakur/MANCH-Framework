@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4062D250234EF52C00E3A761 /* eSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D23D234EF52C00E3A761 /* eSign.swift */; };
+		4062D251234EF52C00E3A761 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D23E234EF52C00E3A761 /* Transaction.swift */; };
+		4062D252234EF52C00E3A761 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D241234EF52C00E3A761 /* ParameterEncoding.swift */; };
+		4062D253234EF52C00E3A761 /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D242234EF52C00E3A761 /* URLParameterEncoding.swift */; };
+		4062D254234EF52C00E3A761 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D243234EF52C00E3A761 /* JSONParameterEncoder.swift */; };
+		4062D255234EF52C00E3A761 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D245234EF52C00E3A761 /* NetworkManager.swift */; };
+		4062D256234EF52C00E3A761 /* ManchEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D247234EF52C00E3A761 /* ManchEndPoint.swift */; };
+		4062D257234EF52C00E3A761 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D249234EF52C00E3A761 /* NetworkRouter.swift */; };
+		4062D258234EF52C00E3A761 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24A234EF52C00E3A761 /* HTTPTask.swift */; };
+		4062D259234EF52C00E3A761 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24B234EF52C00E3A761 /* HTTPMethod.swift */; };
+		4062D25A234EF52C00E3A761 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24C234EF52C00E3A761 /* Router.swift */; };
+		4062D25B234EF52C00E3A761 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24D234EF52C00E3A761 /* NetworkLogger.swift */; };
+		4062D25C234EF52C00E3A761 /* AuthTokenGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24E234EF52C00E3A761 /* AuthTokenGenerator.swift */; };
+		4062D25D234EF52C00E3A761 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D24F234EF52C00E3A761 /* EndPointType.swift */; };
+		4062D25F234EF56E00E3A761 /* ManchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062D25E234EF56E00E3A761 /* ManchViewController.swift */; };
 		40B13B5C234ED7CB00730AD4 /* ManchSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B13B52234ED7CB00730AD4 /* ManchSDK.framework */; };
 		40B13B61234ED7CB00730AD4 /* ManchSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B13B60234ED7CB00730AD4 /* ManchSDKTests.swift */; };
 		40B13B63234ED7CB00730AD4 /* ManchSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 40B13B55234ED7CB00730AD4 /* ManchSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40B13B76234ED96B00730AD4 /* ManchSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B13B75234ED96B00730AD4 /* ManchSDKManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4062D23D234EF52C00E3A761 /* eSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eSign.swift; sourceTree = "<group>"; };
+		4062D23E234EF52C00E3A761 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4062D241234EF52C00E3A761 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4062D242234EF52C00E3A761 /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		4062D243234EF52C00E3A761 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		4062D245234EF52C00E3A761 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4062D247234EF52C00E3A761 /* ManchEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManchEndPoint.swift; sourceTree = "<group>"; };
+		4062D249234EF52C00E3A761 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		4062D24A234EF52C00E3A761 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		4062D24B234EF52C00E3A761 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4062D24C234EF52C00E3A761 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4062D24D234EF52C00E3A761 /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		4062D24E234EF52C00E3A761 /* AuthTokenGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthTokenGenerator.swift; sourceTree = "<group>"; };
+		4062D24F234EF52C00E3A761 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		4062D25E234EF56E00E3A761 /* ManchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManchViewController.swift; sourceTree = "<group>"; };
 		40B13B52234ED7CB00730AD4 /* ManchSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManchSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B13B55234ED7CB00730AD4 /* ManchSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManchSDK.h; sourceTree = "<group>"; };
 		40B13B56234ED7CB00730AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B13B5B234ED7CB00730AD4 /* ManchSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManchSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B13B60234ED7CB00730AD4 /* ManchSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManchSDKTests.swift; sourceTree = "<group>"; };
 		40B13B62234ED7CB00730AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B13B75234ED96B00730AD4 /* ManchSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManchSDKManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +82,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4062D23C234EF52C00E3A761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4062D23D234EF52C00E3A761 /* eSign.swift */,
+				4062D23E234EF52C00E3A761 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4062D23F234EF52C00E3A761 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4062D240234EF52C00E3A761 /* Encoding */,
+				4062D244234EF52C00E3A761 /* Manager */,
+				4062D246234EF52C00E3A761 /* EndPoint */,
+				4062D248234EF52C00E3A761 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4062D240234EF52C00E3A761 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				4062D241234EF52C00E3A761 /* ParameterEncoding.swift */,
+				4062D242234EF52C00E3A761 /* URLParameterEncoding.swift */,
+				4062D243234EF52C00E3A761 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		4062D244234EF52C00E3A761 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4062D245234EF52C00E3A761 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4062D246234EF52C00E3A761 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				4062D247234EF52C00E3A761 /* ManchEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		4062D248234EF52C00E3A761 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4062D249234EF52C00E3A761 /* NetworkRouter.swift */,
+				4062D24A234EF52C00E3A761 /* HTTPTask.swift */,
+				4062D24B234EF52C00E3A761 /* HTTPMethod.swift */,
+				4062D24C234EF52C00E3A761 /* Router.swift */,
+				4062D24D234EF52C00E3A761 /* NetworkLogger.swift */,
+				4062D24E234EF52C00E3A761 /* AuthTokenGenerator.swift */,
+				4062D24F234EF52C00E3A761 /* EndPointType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		40B13B48234ED7CB00730AD4 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +163,12 @@
 		40B13B54234ED7CB00730AD4 /* ManchSDK */ = {
 			isa = PBXGroup;
 			children = (
+				4062D23C234EF52C00E3A761 /* Model */,
+				4062D23F234EF52C00E3A761 /* Networking */,
 				40B13B55234ED7CB00730AD4 /* ManchSDK.h */,
 				40B13B56234ED7CB00730AD4 /* Info.plist */,
+				40B13B75234ED96B00730AD4 /* ManchSDKManager.swift */,
+				4062D25E234EF56E00E3A761 /* ManchViewController.swift */,
 			);
 			path = ManchSDK;
 			sourceTree = "<group>";
@@ -148,6 +244,7 @@
 				TargetAttributes = {
 					40B13B51234ED7CB00730AD4 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					40B13B5A234ED7CB00730AD4 = {
 						CreatedOnToolsVersion = 10.2;
@@ -194,6 +291,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4062D250234EF52C00E3A761 /* eSign.swift in Sources */,
+				40B13B76234ED96B00730AD4 /* ManchSDKManager.swift in Sources */,
+				4062D254234EF52C00E3A761 /* JSONParameterEncoder.swift in Sources */,
+				4062D259234EF52C00E3A761 /* HTTPMethod.swift in Sources */,
+				4062D25A234EF52C00E3A761 /* Router.swift in Sources */,
+				4062D25B234EF52C00E3A761 /* NetworkLogger.swift in Sources */,
+				4062D255234EF52C00E3A761 /* NetworkManager.swift in Sources */,
+				4062D252234EF52C00E3A761 /* ParameterEncoding.swift in Sources */,
+				4062D25D234EF52C00E3A761 /* EndPointType.swift in Sources */,
+				4062D251234EF52C00E3A761 /* Transaction.swift in Sources */,
+				4062D25F234EF56E00E3A761 /* ManchViewController.swift in Sources */,
+				4062D258234EF52C00E3A761 /* HTTPTask.swift in Sources */,
+				4062D256234EF52C00E3A761 /* ManchEndPoint.swift in Sources */,
+				4062D25C234EF52C00E3A761 /* AuthTokenGenerator.swift in Sources */,
+				4062D253234EF52C00E3A761 /* URLParameterEncoding.swift in Sources */,
+				4062D257234EF52C00E3A761 /* NetworkRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +454,7 @@
 		40B13B67234ED7CB00730AD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blooms.ManchSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +481,7 @@
 		40B13B68234ED7CB00730AD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +507,7 @@
 		40B13B6A234ED7CB00730AD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3NYY9RAX5;
 				INFOPLIST_FILE = ManchSDKTests/Info.plist;
@@ -409,6 +526,7 @@
 		40B13B6B234ED7CB00730AD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F3NYY9RAX5;
 				INFOPLIST_FILE = ManchSDKTests/Info.plist;
