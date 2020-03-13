@@ -32,6 +32,8 @@ Manch SDK for eSIgn.
 
   s.source_files = 'ManchSDK/**/*'
   
+  s.swift_version = "4.2"
+  
   # s.resource_bundles = {
   #   'MancheSign' => ['MancheSign/Assets/*.png']
   # }
