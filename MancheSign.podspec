@@ -23,7 +23,7 @@ Manch SDK for eSIgn.
 
   s.homepage         = 'https://github.com/atmaramthakur/MANCH-Framework.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  #s.license          = { :type => 'MIT', :file => '/LICENSE.txt' }
   s.author           = { 'Atmaram' => 'atmaram.thakur@gmail.com' }
   s.source           = { :git => 'https://github.com/atmaramthakur/MANCH-Framework.git', :tag => "#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
